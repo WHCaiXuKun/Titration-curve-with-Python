@@ -1,2 +1,2 @@
 # matplotlib-
-Pytonのmatplotlibモジュールを使って科学における中和滴定曲線を描く
+Pytonのmatplotlibモジュールを使って化学における中和滴定曲線を描く
