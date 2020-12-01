@@ -1,6 +1,8 @@
 # matplotlib
 Pytonのmatplotlibモジュールを使って化学における中和滴定曲線を描く。
 
+![](https://github.com/Xiong-yinghao/Titration-curve-with-Python/blob/main/%E4%B8%AD%E5%92%8C%E6%BB%B4%E5%AE%9A.png?raw=true)
+
 - [PH滴定分析](https://github.com/Xiong-yinghao/Titration-curve-with-Python/blob/main/PH%E6%BB%B4%E5%AE%9A%E6%9B%B2%E7%B7%9A.ipynb)
 - [図１ 中和滴定曲線](https://github.com/Xiong-yinghao/Titration-curve-with-Python/blob/main/%E4%B8%AD%E5%92%8C%E6%BB%B4%E5%AE%9A.png)
 
@@ -47,7 +49,7 @@ yをPHとする、PHの値はPH電極(プロントセンサー)により測定�
 DataSet = list(zip(x, y))
 ```
 
-得られたxとyのリストをセットし、list(zip(x, y))でセットを含むリストにした。これをdf.to_csv("滴定曲線.csv", index=False)により、csvファイルとして保存した。何故かローカルファイルに保存するという、データの完全性を保つからだ。続いて、保存されたファイルを一度読み込んだ。  
+得られたxとyのリストをセットし、list(zip(x, y))でセットを含むリストにした。これをdf.to_csv("滴定曲線.csv", index=False)により、csvファイルとして保存した。何故かローカルファイルに保存するという、データの完全性を保つからだ。続いて、保存されたファイルを一度読み込んだ。見やすため、図の色をrainbowにした。
 x軸を滴下量[ml]、y軸をPH、plt.scatter(x, y, cmap='rainbow', marker='o', c=y, alpha=.5, s=100)を用いてPHと滴下量[ml]に関する散布図を描いた。
 
 ```
